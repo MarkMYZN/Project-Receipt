@@ -2,19 +2,192 @@
 #include <windows.h>
 
 class showAisles {
-    void aisle1() {};
-    void aisle2() {};
-    void aisle3() {};
-    void aisle4() {};
-    void aisle5() {};
+public:
+    void aisle1() {
+            system("cls");
+            printf("You are inside 'Aisle1'.\n");
+            printf("Items inside this aisle are:\n");
+            printf("(1) Product1\n");
+            printf("(2) Product2\n");
+            printf("(3) Product3\n");
+            printf("(4) Product4\n");
+            printf("(5) Product5\n");
+    };
+    void aisle2() {system("cls");
+            printf("You are inside 'Aisle2'.\n");
+            printf("Items inside this aisle are:\n");
+            printf("(1) Product1\n");
+            printf("(2) Product2\n");
+            printf("(3) Product3\n");
+            printf("(4) Product4\n");
+            printf("(5) Product5\n");
+    };
+    void aisle3() {system("cls");
+            printf("You are inside 'Aisle3'.\n");
+            printf("Items inside this aisle are:\n");
+            printf("(1) Product1\n");
+            printf("(2) Product2\n");
+            printf("(3) Product3\n");
+            printf("(4) Product4\n");
+            printf("(5) Product5\n");
+    };
+    void aisle4() {system("cls");
+            printf("You are inside 'Aisle4'.\n");
+            printf("Items inside this aisle are:\n");
+            printf("(1) Product1\n");
+            printf("(2) Product2\n");
+            printf("(3) Product3\n");
+            printf("(4) Product4\n");
+            printf("(5) Product5\n");
+    };
+    void aisle5() {system("cls");
+            printf("You are inside 'Aisle5'.\n");
+            printf("Items inside this aisle are:\n");
+            printf("(1) Product1\n");
+            printf("(2) Product2\n");
+            printf("(3) Product3\n");
+            printf("(4) Product4\n");
+            printf("(5) Product5\n");
+    };
 };
 
 class aisleFunc {
-    void aisle1Func() {};
-    void aisle2Func() {};
-    void aisle3Func() {};
-    void aisle4Func() {};
-    void aisle5Func() {};
+public:
+    void aisle1Func() {
+        int choice;
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 2:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 3:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 4:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 5:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+        };
+        //checkout logic
+    };
+    void aisle2Func() {
+        int choice;
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 2:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 3:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 4:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 5:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+        };
+        //checkout logic
+    };
+    void aisle3Func() {
+        int choice;
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 2:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 3:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 4:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 5:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+        };
+        //checkout logic
+    };
+    void aisle4Func() {
+        int choice;
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 2:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 3:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 4:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 5:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+        };
+        //checkout logic
+    };
+    void aisle5Func() {
+        int choice;
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 2:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 3:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 4:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+            case 5:
+                system("cls");
+                printf("Item has been added to cart.\n");
+                break;
+        };
+        //checkout logic
+    };
 };
 
 class showMenuFunc {
@@ -25,23 +198,28 @@ class showMenuFunc {
         switch (menuchoice) {
             case 1:
                 system("cls");
-                //logic
+                showAisles{}.aisle1();
+                aisleFunc{}.aisle1Func();
                 break;
             case 2:
                 system("cls");
-                //logic
+                showAisles{}.aisle2();
+                aisleFunc{}.aisle2Func();
                 break;
             case 3:
                 system("cls");
-                //logic
+                showAisles{}.aisle3();
+                aisleFunc{}.aisle3Func();
                 break;
             case 4:
                 system("cls");
-                //logic
+                showAisles{}.aisle4();
+                aisleFunc{}.aisle4Func();
                 break;
             case 5:
                 system("cls");
-                //logic
+                showAisles{}.aisle5();
+                aisleFunc{}.aisle5Func();
                 break;
         }
     };
