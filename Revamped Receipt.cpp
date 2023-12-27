@@ -57,16 +57,16 @@ class showMenue {
             printf("(3) Aisle3\n");
             printf("(4) Aisle4\n");
             printf("(5) Aisle5\n");
-            showMenuFunc menuFunc;
-            menuFunc.menuFunc();
+            showMenuFunc{}.menuFunc();
         };
 };
 
 
 
 int main() {
+
     system("cls");
     printf("Welcome To Shop.");
-    showMenue menu;
-    menu.showMenu();
+  //classname{}.voidfunction();    // this is how to call a void function inside a class
+    showMenue{}.showMenu();
 };
