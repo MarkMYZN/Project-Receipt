@@ -1,29 +1,52 @@
 #include <stdio.h>
 #include <windows.h>
 #include <time.h>
+#include <string.h>
 
 #define MAX 10
 
+//this hould be the top class/function, else the application will throw errors.
 class cart {
-public:
+    public:
     float generateRandomFloat(float min, float max) {
         return min + ((float)rand() / RAND_MAX) * (max - min);
     }
-public:
+    public:
     char name[MAX][256];
     int quantity[MAX];
     float price[MAX];
     int currentIndex = 0;
 
-public:
+    public:
     void incrementIndex() {
         currentIndex++;
     };
-    void userCart() {};
+};
+
+class userCheckout {
+    public:
+    void printReceipt() {
+        for (int i = 0; i < cart{}.currentIndex; ++i) {
+            printf("%-20s%-10d%-10.2f\n", cart{}.name[i], cart{}.quantity[i], cart{}.price[i]);
+        };
+        // follow this format
+        printf("========== Shop ==========");
+        printf("======================================\n");
+        //print DD/MM/YYYY | CURRENT TIME OF THE DAY
+        printf("======================================\n");
+        printf("Casheir Teller : Mark Mostrales\n");
+        printf("======================================\n");
+        printf("Cart Contents:\n");
+        printf("%-20s%-10s%-10s\n", "Item", "Quantity", "Price");
+        printf(" ================= Total:\n");
+        printf("======================================\n");
+        printf("Thank you for shopping with us!");
+
+    };
 };
 
 class showAisles {
-public:
+    public:
     void aisle1() {
             system("cls");
             printf("You are inside 'Aisle1'.\n");
@@ -73,7 +96,7 @@ public:
 };
 
 class aisleFunc {
-public:
+    public:
     void aisle1Func() {
         int choice;
 
