@@ -1,5 +1,26 @@
 #include <stdio.h>
 #include <windows.h>
+#include <time.h>
+
+#define MAX 10
+
+class cart {
+public:
+    float generateRandomFloat(float min, float max) {
+        return min + ((float)rand() / RAND_MAX) * (max - min);
+    }
+public:
+    char name[MAX][256];
+    int quantity[MAX];
+    float price[MAX];
+    int currentIndex = 0;
+
+public:
+    void incrementIndex() {
+        currentIndex++;
+    };
+    void userCart() {};
+};
 
 class showAisles {
 public:
@@ -55,30 +76,85 @@ class aisleFunc {
 public:
     void aisle1Func() {
         int choice;
+
         scanf("%d", &choice);
         switch (choice) {
             case 1:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 2:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 3:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 4:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 5:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
         };
-        //checkout logic
     };
     void aisle2Func() {
         int choice;
@@ -86,26 +162,80 @@ public:
         switch (choice) {
             case 1:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 2:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 3:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 4:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 5:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
         };
-        //checkout logic
     };
     void aisle3Func() {
         int choice;
@@ -113,26 +243,80 @@ public:
         switch (choice) {
             case 1:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 2:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 3:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 4:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 5:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
         };
-        //checkout logic
     };
     void aisle4Func() {
         int choice;
@@ -140,26 +324,80 @@ public:
         switch (choice) {
             case 1:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 2:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 3:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 4:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 5:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
         };
-        //checkout logic
     };
     void aisle5Func() {
         int choice;
@@ -167,26 +405,80 @@ public:
         switch (choice) {
             case 1:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 2:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 3:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 4:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
             case 5:
                 system("cls");
+                for (int i = 0; i < MAX; ++i) {
+                        sprintf(cart{}.name[cart{}.currentIndex], " item name will be replaced here ", cart{}.currentIndex + 1);
+                        cart{}.quantity[cart{}.currentIndex] = cart{}.currentIndex + 1;
+                        cart{}.price[cart{}.currentIndex] = cart{}.generateRandomFloat(1.0, 10.0) * (cart{}.currentIndex + 1);
+                        cart{}.incrementIndex();
+                        if (cart{}.currentIndex >= MAX) {
+                            break;
+                        }
+                    }
                 printf("Item has been added to cart.\n");
+                //checkout logic
+                //back to lobby logic
                 break;
         };
-        //checkout logic
     };
 };
 
@@ -242,7 +534,8 @@ class showMenue {
 
 
 int main() {
-
+    srand(time(NULL));
+    float randomFloat = cart{}.generateRandomFloat(1.0, 100.0);
     system("cls");
     printf("Welcome To Shop.");
   //classname{}.voidfunction();    // this is how to call a void function inside a class
