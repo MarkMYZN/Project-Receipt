@@ -1,4 +1,4 @@
-# Project: Receipt
+# Project: Receipt System
 Shopping Receipt Project
 
 ==|| BSCS 1-Y1-1 || Our Lady Of Fatima University ||==
